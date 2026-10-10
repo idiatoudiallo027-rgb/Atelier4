@@ -15,3 +15,18 @@ class Compte {
     }
   }
 }
+
+
+//Test dans le main
+void main() {
+  var monCompte = Compte("FR123452569", 50.0);
+  
+  print('Numéro de compte : ${monCompte.numeroCompte}');
+  print('Solde initial : ${monCompte.solde}');
+
+  // Effectuer un dépôt
+  monCompte.depot(150.0);
+
+  // Affichage
+  print('Solde final : ${monCompte.solde}');
+}
