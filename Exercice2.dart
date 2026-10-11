@@ -15,9 +15,9 @@ class Point {
 }
 
 void main() {
-  var pts = Point(2, 5);
-  pts.display();
+  var pt = Point(2, 5);
+  pt.display();
 
-  pts.move(-1, 3);
-  pts.display();
+  pt.move(-1, 3);
+  pt.display();
 }
