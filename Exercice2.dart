@@ -4,21 +4,20 @@ class Point {
 
   Point(this._x, this._y);
 
-   void move(double dx, double dy) {
-  _x += dx;
-  _y += dy;
+  void move(double dx, double dy) {
+    _x += dx;
+    _y += dy;
   }
-  void display() {
-  print('($_x, $_y)');
-}
 
- 
+  void display() {
+    print('($_x, $_y)');
+  }
 }
 
 void main() {
-  var pt = Point(2, 5);
-  pt.display();
+  var pts = Point(2, 5);
+  pts.display();
 
-  pt.move(-1, 3);
-  pt.display();
+  pts.move(-1, 3);
+  pts.display();
 }
