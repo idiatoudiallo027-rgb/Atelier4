@@ -1,10 +1,9 @@
 class Media {
-
   final String titre;
 
   Media(this.titre);
 
-  // 3. Méthode afficherType
+  //  Méthode afficherType
   void afficherType() {
     print("Ceci est un média générique.");
   }
@@ -23,7 +22,6 @@ class Livre extends Media {
   }
 }
 
-
 class Film extends Media {
   final int dureeMinutes;
 
@@ -35,17 +33,15 @@ class Film extends Media {
   }
 }
 
-
-
 void main() {
-  //  Création de la liste catalogue 
+  //  Création de la liste catalogue
   List<Media> catalogue = [];
 
   //  Ajout d'instances de Livre et  Film
   catalogue.add(Livre("L'Alchimiste", "Paulo Coelho"));
   catalogue.add(Film("GoodLife", 158));
   catalogue.add(Livre("Le Petit Prince", "Antoine de Saint-Exupéry"));
-  catalogue.add(Film("Avatar", 162));
+  catalogue.add(Film("Avatar", 182));
 
   //  Parcours de la liste
   for (var media in catalogue) {
