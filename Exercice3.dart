@@ -1,10 +1,9 @@
 class Compte {
   final String numeroCompte;
-  double _solde; 
+  double _solde;
   Compte(this.numeroCompte, [this._solde = 0.0]);
 
   String get solde => '${_solde.toStringAsFixed(2)} \$';
-
 
   void depot(double montant) {
     if (montant > 0) {
@@ -16,11 +15,10 @@ class Compte {
   }
 }
 
-
 //Test dans le main
 void main() {
   var monCompte = Compte("FR123452569", 50.0);
-  
+
   print('Numéro de compte : ${monCompte.numeroCompte}');
   print('Solde initial : ${monCompte.solde}');
 
