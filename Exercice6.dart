@@ -26,3 +26,13 @@ class BaseDeDonnees implements Connectable {
     print("BaseDeDonnees : Fermeture de la connexion sécurisée.");
   }
 }
+
+void main() {
+  List<Connectable> services = [ServeurAPI(), BaseDeDonnees()];
+
+  for (var service in services) {
+    service.connecter("Idiatou");
+    service.deconnecter();
+    print("");
+  }
+}
