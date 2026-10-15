@@ -13,7 +13,6 @@ class Cercle extends Forme {
 
   Cercle(this.rayon);
 
-  // 5. Implémentation de calculerAire() pour le cercle
   @override
   double calculerAire() {
     return pi * rayon * rayon;
@@ -26,9 +25,17 @@ class Rectangle extends Forme {
 
   Rectangle(this.longueur, this.largeur);
 
-  // 7. Implémentation de calculerAire() pour le rectangle
   @override
   double calculerAire() {
     return longueur * largeur;
+  }
+}
+
+void main() {
+  List<Forme> formes = [Cercle(5.0), Rectangle(4.0, 6.0)];
+
+  for (var forme in formes) {
+    forme.afficherMessage();
+    print("L aire est : ${forme.calculerAire()}\n");
   }
 }
